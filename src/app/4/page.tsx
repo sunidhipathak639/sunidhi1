@@ -1,5 +1,6 @@
 'use client';
 import Link from 'next/link';
+import Image from 'next/image';
 import { useState, useEffect } from 'react';
 
 export default function Program4() {
@@ -104,9 +105,11 @@ export default function Program4() {
               <div className="relative bg-gray-900/80 backdrop-blur-xl rounded-2xl p-8 border border-gray-700/50">
                 <h3 className="text-xl font-bold text-white mb-6 text-center">Motor Circuit Diagram</h3>
                 <div className="relative overflow-hidden rounded-xl">
-                  <img
+                  <Image
                     src="/images/p4_1.jpeg"
                     alt="DC Motor Circuit"
+                    width={800}
+                    height={600}
                     className="w-full h-auto rounded-xl transform hover:scale-105 transition-transform duration-500"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent rounded-xl"></div>
@@ -119,9 +122,11 @@ export default function Program4() {
               <div className="relative bg-gray-900/80 backdrop-blur-xl rounded-2xl p-8 border border-gray-700/50">
                 <h3 className="text-xl font-bold text-white mb-6 text-center">Motor Control Setup</h3>
                 <div className="relative overflow-hidden rounded-xl">
-                  <img
+                  <Image
                     src="/images/p4_2.jpeg"
                     alt="Motor Control Setup"
+                    width={800}
+                    height={600}
                     className="w-full h-auto rounded-xl transform hover:scale-105 transition-transform duration-500"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent rounded-xl"></div>
@@ -141,26 +146,26 @@ export default function Program4() {
                 </h3>
                 
                 <div className="bg-black/60 rounded-xl p-6 font-mono text-sm overflow-x-auto">
-                  <div className="mb-4 text-cyan-400 text-lg">// DC Motor Control Pin</div>
+                  <div className="mb-4 text-cyan-400 text-lg">{/* DC Motor Control Pin */}// DC Motor Control Pin</div>
                   <div className="text-yellow-300">int pin = 9;</div>
                   <br />
                   
-                  <div className="mb-2 text-cyan-400 text-lg">// Setup Function</div>
+                  <div className="mb-2 text-cyan-400 text-lg">{/* Setup Function */}// Setup Function</div>
                   <div className="text-purple-300">void setup() {`{`}</div>
-                  <div className="ml-4 text-gray-400">// Set pin 9 as output for motor control</div>
+                  <div className="ml-4 text-gray-400">{/* Set pin 9 as output for motor control */}// Set pin 9 as output for motor control</div>
                   <div className="ml-4 text-green-300">pinMode(pin, OUTPUT);</div>
                   <div className="text-purple-300">{`}`}</div>
                   <br />
                   
-                  <div className="mb-2 text-cyan-400 text-lg">// Main Loop</div>
+                  <div className="mb-2 text-cyan-400 text-lg">{/* Main Loop */}// Main Loop</div>
                   <div className="text-purple-300">void loop() {`{`}</div>
-                  <div className="ml-4 text-gray-400">// Turn motor ON</div>
+                  <div className="ml-4 text-gray-400">{/* Turn motor ON */}// Turn motor ON</div>
                   <div className="ml-4 text-green-300">digitalWrite(pin, HIGH);</div>
-                  <div className="ml-4 text-orange-300">delay(1000); // Wait for 1000 milliseconds</div>
+                  <div className="ml-4 text-orange-300">delay(1000); {/* Wait for 1000 milliseconds */}// Wait for 1000 milliseconds</div>
                   <br />
-                  <div className="ml-4 text-gray-400">// Turn motor OFF</div>
+                  <div className="ml-4 text-gray-400">{/* Turn motor OFF */}// Turn motor OFF</div>
                   <div className="ml-4 text-red-300">digitalWrite(pin, LOW);</div>
-                  <div className="ml-4 text-orange-300">delay(1000); // Wait for 1000 milliseconds</div>
+                  <div className="ml-4 text-orange-300">delay(1000); {/* Wait for 1000 milliseconds */}// Wait for 1000 milliseconds</div>
                   <div className="text-purple-300">{`}`}</div>
                 </div>
               </div>
@@ -178,7 +183,7 @@ export default function Program4() {
                 </h3>
                 
                 <div className="bg-black/80 rounded-xl p-6 font-mono text-sm">
-                  <div className="mb-2 text-blue-400">// Motor Operation Cycle</div>
+                  <div className="mb-2 text-blue-400">{/* Motor Operation Cycle */}// Motor Operation Cycle</div>
                   <div className="text-green-300 animate-pulse">Motor ON  - Pin 9: HIGH (5V) - Duration: 1000ms</div>
                   <div className="text-red-300">Motor OFF - Pin 9: LOW  (0V) - Duration: 1000ms</div>
                   <div className="text-green-300 animate-pulse">Motor ON  - Pin 9: HIGH (5V) - Duration: 1000ms</div>
@@ -186,7 +191,7 @@ export default function Program4() {
                   <div className="text-green-300 animate-pulse">Motor ON  - Pin 9: HIGH (5V) - Duration: 1000ms</div>
                   <div className="text-red-300">Motor OFF - Pin 9: LOW  (0V) - Duration: 1000ms</div>
                   <br />
-                  <div className="mb-2 text-yellow-400">// Physical Motor Response</div>
+                  <div className="mb-2 text-yellow-400">{/* Physical Motor Response */}// Physical Motor Response</div>
                   <div className="text-cyan-300">→ Motor starts rotating (clockwise)</div>
                   <div className="text-gray-400">→ Motor stops (1 second pause)</div>
                   <div className="text-cyan-300">→ Motor starts rotating (clockwise)</div>

@@ -4,7 +4,6 @@ import { useState, useEffect } from "react";
 
 export default function Home() {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
-  const [hoveredCard, setHoveredCard] = useState<number | null>(null);
 
   useEffect(() => {
     const handleMouseMove = (e: MouseEvent) => {
@@ -106,13 +105,11 @@ export default function Home() {
 
         {/* Program Cards */}
         <div className="grid lg:grid-cols-5 md:grid-cols-3 sm:grid-cols-2 gap-8">
-          {programs.map((program, index) => (
+          {programs.map((program) => (
             <Link
               key={program.id}
               href={`/${program.id}`}
               className="group block"
-              onMouseEnter={() => setHoveredCard(program.id)}
-              onMouseLeave={() => setHoveredCard(null)}
             >
               <div className="relative">
                 {/* Card Glow Effect */}
