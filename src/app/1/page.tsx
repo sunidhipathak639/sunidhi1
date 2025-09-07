@@ -129,7 +129,7 @@ export default function Program1() {
                 </h3>
                 
                 <div className="bg-black/60 rounded-xl p-6 font-mono text-sm overflow-x-auto">
-                  <div className="mb-4 text-cyan-400 text-lg">{/* LED Pin Declarations */}// LED Pin Declarations</div>
+                  <div className="mb-4 text-cyan-400 text-lg">{/* LED Pin Declarations */}</div>
                   <div className="text-yellow-300">int LED1 = 5;</div>
                   <div className="text-yellow-300">int LED2 = 6;</div>
                   <div className="text-yellow-300">int LED3 = 7;</div>
@@ -138,7 +138,7 @@ export default function Program1() {
                   <div className="text-yellow-300">int del = 100;</div>
                   <br />
                   
-                  <div className="mb-2 text-cyan-400 text-lg">{/* Setup Function */}// Setup Function</div>
+                  <div className="mb-2 text-cyan-400 text-lg">{/* Setup Function */}</div>
                   <div className="text-purple-300">void setup() {`{`}</div>
                   <div className="ml-4 text-green-300">pinMode(LED1, OUTPUT);</div>
                   <div className="ml-4 text-green-300">pinMode(LED2, OUTPUT);</div>
@@ -148,7 +148,7 @@ export default function Program1() {
                   <div className="text-purple-300">{`}`}</div>
                   <br />
                   
-                  <div className="mb-2 text-cyan-400 text-lg">{/* Main Loop */}// Main Loop</div>
+                  <div className="mb-2 text-cyan-400 text-lg">{/* Main Loop */}</div>
                   <div className="text-purple-300">void loop() {`{`}</div>
                   <div className="ml-4 text-green-300">digitalWrite(LED1, HIGH);</div>
                   <div className="ml-4 text-orange-300">delay(del);</div>
@@ -165,7 +165,7 @@ export default function Program1() {
                   <div className="ml-4 text-green-300">digitalWrite(LED5, HIGH);</div>
                   <div className="ml-4 text-orange-300">delay(del);</div>
                   <div className="ml-4 text-green-300">digitalWrite(LED5, LOW);</div>
-                  <div className="ml-4 text-gray-400">{/* Reverse sequence... */}// Reverse sequence...</div>
+                  <div className="ml-4 text-gray-400">{/* Reverse sequence... */}</div>
                   <div className="text-purple-300">{`}`}</div>
                 </div>
               </div>

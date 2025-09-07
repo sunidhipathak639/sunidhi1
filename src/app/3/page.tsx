@@ -132,7 +132,7 @@ export default function Program3() {
                 </h3>
                 
                 <div className="bg-black/60 rounded-xl p-6 font-mono text-sm overflow-x-auto">
-                  <div className="mb-4 text-cyan-400 text-lg">{/* Intrusion Detection System - Pin Declarations */}// Intrusion Detection System - Pin Declarations</div>
+                  <div className="mb-4 text-cyan-400 text-lg">{/* Intrusion Detection System - Pin Declarations */}</div>
                   <div className="text-yellow-300">int trigger_pin = 2;</div>
                   <div className="text-yellow-300">int echo_pin = 3;</div>
                   <div className="text-yellow-300">int buzzer_pin = 10;</div>
@@ -140,7 +140,7 @@ export default function Program3() {
                   <div className="text-yellow-300">int distance;</div>
                   <br />
                   
-                  <div className="mb-2 text-cyan-400 text-lg">{/* Setup Function */}// Setup Function</div>
+                  <div className="mb-2 text-cyan-400 text-lg">{/* Setup Function */}</div>
                   <div className="text-purple-300">void setup() {`{`}</div>
                   <div className="ml-4 text-green-300">Serial.begin(9600);</div>
                   <div className="ml-4 text-green-300">pinMode(trigger_pin, OUTPUT);</div>
@@ -149,18 +149,18 @@ export default function Program3() {
                   <div className="text-purple-300">{`}`}</div>
                   <br />
                   
-                  <div className="mb-2 text-cyan-400 text-lg">{/* Main Loop */}// Main Loop</div>
+                  <div className="mb-2 text-cyan-400 text-lg">{/* Main Loop */}</div>
                   <div className="text-purple-300">void loop() {`{`}</div>
-                  <div className="ml-4 text-gray-400">{/* Send ultrasonic pulse */}// Send ultrasonic pulse</div>
+                  <div className="ml-4 text-gray-400">{/* Send ultrasonic pulse */}</div>
                   <div className="ml-4 text-green-300">digitalWrite(trigger_pin, HIGH);</div>
                   <div className="ml-4 text-orange-300">delayMicroseconds(10);</div>
                   <div className="ml-4 text-green-300">digitalWrite(trigger_pin, LOW);</div>
                   <br />
-                  <div className="ml-4 text-gray-400">{/* Measure pulse duration and calculate distance */}// Measure pulse duration and calculate distance</div>
+                  <div className="ml-4 text-gray-400">{/* Measure pulse duration and calculate distance */}</div>
                   <div className="ml-4 text-green-300">time = pulseIn(echo_pin, HIGH);</div>
                   <div className="ml-4 text-green-300">distance = (time * 0.034) / 2;</div>
                   <br />
-                  <div className="ml-4 text-gray-400">{/* Check for intrusion (distance ≤ 10cm) */}// Check for intrusion (distance ≤ 10cm)</div>
+                  <div className="ml-4 text-gray-400">{/* Check for intrusion (distance ≤ 10cm) */}</div>
                   <div className="ml-4 text-orange-300">if (distance &lt;= 10) {`{`}</div>
                   <div className="ml-8 text-red-300">Serial.print(&quot;Door Open&quot;);</div>
                   <div className="ml-8 text-blue-300">Serial.print(&quot; Distance=&quot;);</div>
@@ -190,19 +190,19 @@ export default function Program3() {
                 </h3>
                 
                 <div className="bg-black/80 rounded-xl p-6 font-mono text-sm">
-                  <div className="mb-2 text-green-400">{/* When door is closed (distance > 10cm) */}// When door is closed (distance &gt; 10cm)</div>
+                  <div className="mb-2 text-green-400">{/* When door is closed (distance > 10cm) */}</div>
                   <div className="text-green-300">Door Closed Distance=25</div>
                   <div className="text-green-300">Door Closed Distance=24</div>
                   <div className="text-green-300">Door Closed Distance=26</div>
                   <div className="text-green-300">Door Closed Distance=23</div>
                   <br />
-                  <div className="mb-2 text-red-400">{/* When intrusion is detected (distance ≤ 10cm) */}// When intrusion is detected (distance ≤ 10cm)</div>
+                  <div className="mb-2 text-red-400">{/* When intrusion is detected (distance ≤ 10cm) */}</div>
                   <div className="text-red-300 animate-pulse">Door Open Distance=8</div>
                   <div className="text-red-300 animate-pulse">Door Open Distance=7</div>
                   <div className="text-red-300 animate-pulse">Door Open Distance=9</div>
                   <div className="text-red-300 animate-pulse">Door Open Distance=6</div>
                   <br />
-                  <div className="mb-2 text-green-400">{/* Back to normal state */}// Back to normal state</div>
+                  <div className="mb-2 text-green-400">{/* Back to normal state */}</div>
                   <div className="text-green-300">Door Closed Distance=22</div>
                   <div className="text-green-300">Door Closed Distance=25</div>
                   <div className="text-green-300">Door Closed Distance=24</div>

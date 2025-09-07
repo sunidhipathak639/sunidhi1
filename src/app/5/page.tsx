@@ -152,12 +152,12 @@ export default function Program5() {
                 </h3>
                 
                 <div className="bg-black/60 rounded-xl p-6 font-mono text-sm overflow-x-auto">
-                  <div className="mb-4 text-cyan-400 text-lg">{/* Smart Street Light System using LDR */}// Smart Street Light System using LDR</div>
+                  <div className="mb-4 text-cyan-400 text-lg">{/* Smart Street Light System using LDR */}</div>
                   <div className="text-yellow-300">int led = 10;      // LED connected to digital pin 10</div>
                   <div className="text-yellow-300">int ldr = A0;      // LDR connected to analog pin A0</div>
                   <br />
                   
-                  <div className="mb-2 text-cyan-400 text-lg">{/* Setup Function */}// Setup Function</div>
+                  <div className="mb-2 text-cyan-400 text-lg">{/* Setup Function */}</div>
                   <div className="text-purple-300">void setup() {`{`}</div>
                   <div className="ml-4 text-green-300">Serial.begin(9600);        // Initialize serial communication</div>
                   <div className="ml-4 text-green-300">pinMode(led, OUTPUT);       // Set LED pin as output</div>
@@ -165,15 +165,15 @@ export default function Program5() {
                   <div className="text-purple-300">{`}`}</div>
                   <br />
                   
-                  <div className="mb-2 text-cyan-400 text-lg">{/* Main Loop */}// Main Loop</div>
+                  <div className="mb-2 text-cyan-400 text-lg">{/* Main Loop */}</div>
                   <div className="text-purple-300">void loop() {`{`}</div>
                   <div className="ml-4 text-green-300">int ldrStatus = analogRead(ldr);   // Read LDR sensor value</div>
                   <br />
-                  <div className="ml-4 text-gray-400">{/* Print sensor value for debugging */}// Print sensor value for debugging</div>
+                  <div className="ml-4 text-gray-400">{/* Print sensor value for debugging */}</div>
                   <div className="ml-4 text-blue-300">Serial.print(&quot;LDR Value: &quot;);</div>
                   <div className="ml-4 text-blue-300">Serial.println(ldrStatus);</div>
                   <br />
-                  <div className="ml-4 text-gray-400">{/* If light level is low (dark), turn ON the street light */}// If light level is low (dark), turn ON the street light</div>
+                  <div className="ml-4 text-gray-400">{/* If light level is low (dark), turn ON the street light */}</div>
                   <div className="ml-4 text-orange-300">if (ldrStatus &lt;= 300) {`{`}</div>
                   <div className="ml-8 text-green-300">digitalWrite(led, HIGH);    // Turn ON LED (Street Light)</div>
                   <div className="ml-8 text-blue-300">Serial.println(&quot;Street Light: ON (Dark detected)&quot;);</div>
@@ -200,7 +200,7 @@ export default function Program5() {
                 </h3>
                 
                 <div className="bg-black/80 rounded-xl p-6 font-mono text-sm">
-                  <div className="mb-2 text-blue-400">{/* During daytime (bright light) */}// During daytime (bright light)</div>
+                  <div className="mb-2 text-blue-400">{/* During daytime (bright light) */}</div>
                   <div className="text-white">LDR Value: 850</div>
                   <div className="text-gray-400">Street Light: OFF (Sufficient light)</div>
                   <div className="text-white">LDR Value: 820</div>
@@ -208,7 +208,7 @@ export default function Program5() {
                   <div className="text-white">LDR Value: 780</div>
                   <div className="text-gray-400">Street Light: OFF (Sufficient light)</div>
                   <br />
-                  <div className="mb-2 text-yellow-400">{/* During evening/night (low light) */}// During evening/night (low light)</div>
+                  <div className="mb-2 text-yellow-400">{/* During evening/night (low light) */}</div>
                   <div className="text-orange-300 animate-pulse">LDR Value: 250</div>
                   <div className="text-green-300 animate-pulse">Street Light: ON (Dark detected)</div>
                   <div className="text-orange-300 animate-pulse">LDR Value: 180</div>
@@ -216,7 +216,7 @@ export default function Program5() {
                   <div className="text-orange-300 animate-pulse">LDR Value: 120</div>
                   <div className="text-green-300 animate-pulse">Street Light: ON (Dark detected)</div>
                   <br />
-                  <div className="mb-2 text-blue-400">{/* Back to daylight */}// Back to daylight</div>
+                  <div className="mb-2 text-blue-400">{/* Back to daylight */}</div>
                   <div className="text-white">LDR Value: 450</div>
                   <div className="text-gray-400">Street Light: OFF (Sufficient light)</div>
                   <div className="text-white">LDR Value: 650</div>

@@ -108,12 +108,12 @@ export default function Program2() {
                 </h3>
                 
                 <div className="bg-black/60 rounded-xl p-6 font-mono text-sm">
-                  <div className="text-green-400 mb-2">{/* Integer Declaration */}// Integer Declaration</div>
+                  <div className="text-green-400 mb-2">{/* Integer Declaration */}</div>
                   <div className="text-yellow-300">int age = 25;</div>
                   <div className="text-yellow-300">int count = 0;</div>
                   <div className="text-yellow-300">int temperature = -10;</div>
                   <br />
-                  <div className="text-cyan-400">{/* Range: -32,768 to 32,767 */}// Range: -32,768 to 32,767</div>
+                  <div className="text-cyan-400">{/* Range: -32,768 to 32,767 */}</div>
                 </div>
                 
                 <div className="mt-4 text-gray-300">
@@ -131,12 +131,12 @@ export default function Program2() {
                 </h3>
                 
                 <div className="bg-black/60 rounded-xl p-6 font-mono text-sm">
-                  <div className="text-blue-400 mb-2">{/* String Declaration */}// String Declaration</div>
+                  <div className="text-blue-400 mb-2">{/* String Declaration */}</div>
                   <div className="text-yellow-300">String name = &quot;Arduino&quot;;</div>
                   <div className="text-yellow-300">String message = &quot;Hello World&quot;;</div>
                   <div className="text-yellow-300">String sensor = &quot;Temperature&quot;;</div>
                   <br />
-                  <div className="text-cyan-400">{/* Text data storage */}// Text data storage</div>
+                  <div className="text-cyan-400">{/* Text data storage */}</div>
                 </div>
                 
                 <div className="mt-4 text-gray-300">
@@ -154,12 +154,12 @@ export default function Program2() {
                 </h3>
                 
                 <div className="bg-black/60 rounded-xl p-6 font-mono text-sm">
-                  <div className="text-purple-400 mb-2">{/* Boolean Declaration */}// Boolean Declaration</div>
+                  <div className="text-purple-400 mb-2">{/* Boolean Declaration */}</div>
                   <div className="text-yellow-300">bool isOn = true;</div>
                   <div className="text-yellow-300">bool sensorActive = false;</div>
                   <div className="text-yellow-300">bool ledState = HIGH;</div>
                   <br />
-                  <div className="text-cyan-400">{/* True or False values */}// True or False values</div>
+                  <div className="text-cyan-400">{/* True or False values */}</div>
                 </div>
                 
                 <div className="mt-4 text-gray-300">
@@ -177,12 +177,12 @@ export default function Program2() {
                 </h3>
                 
                 <div className="bg-black/60 rounded-xl p-6 font-mono text-sm">
-                  <div className="text-orange-400 mb-2">{/* Float Declaration */}// Float Declaration</div>
+                  <div className="text-orange-400 mb-2">{/* Float Declaration */}</div>
                   <div className="text-yellow-300">float voltage = 3.14;</div>
                   <div className="text-yellow-300">float temperature = 25.6;</div>
                   <div className="text-yellow-300">float distance = 12.45;</div>
                   <br />
-                  <div className="text-cyan-400">{/* Decimal point numbers */}// Decimal point numbers</div>
+                  <div className="text-cyan-400">{/* Decimal point numbers */}</div>
                 </div>
                 
                 <div className="mt-4 text-gray-300">
@@ -203,39 +203,39 @@ export default function Program2() {
                 </h3>
                 
                 <div className="bg-black/60 rounded-xl p-6 font-mono text-sm overflow-x-auto">
-                  <div className="mb-4 text-cyan-400 text-lg">{/* Variable Declarations */}// Variable Declarations</div>
-                  <div className="text-yellow-300">int ledPin = 13;           {/* LED connected to pin 13 */}// LED connected to pin 13</div>
-                  <div className="text-yellow-300">int sensorPin = A0;        {/* Sensor on analog pin A0 */}// Sensor on analog pin A0</div>
-                  <div className="text-yellow-300">bool ledState = false;     {/* LED current state */}// LED current state</div>
-                  <div className="text-yellow-300">float sensorValue = 0.0;   {/* Sensor reading */}// Sensor reading</div>
-                  <div className="text-yellow-300">String status = &quot;OFF&quot;;     {/* System status */}// System status</div>
+                  <div className="mb-4 text-cyan-400 text-lg">{/* Variable Declarations */}</div>
+                  <div className="text-yellow-300">int ledPin = 13;           {/* LED connected to pin 13 */}</div>
+                  <div className="text-yellow-300">int sensorPin = A0;        {/* Sensor on analog pin A0 */}</div>
+                  <div className="text-yellow-300">bool ledState = false;     {/* LED current state */}</div>
+                  <div className="text-yellow-300">float sensorValue = 0.0;   {/* Sensor reading */}</div>
+                  <div className="text-yellow-300">String status = &quot;OFF&quot;;     {/* System status */}</div>
                   <br />
                   
-                  <div className="mb-2 text-cyan-400 text-lg">{/* Setup Function */}// Setup Function</div>
+                  <div className="mb-2 text-cyan-400 text-lg">{/* Setup Function */}</div>
                   <div className="text-purple-300">void setup() {`{`}</div>
                   <div className="ml-4 text-green-300">Serial.begin(9600);</div>
                   <div className="ml-4 text-green-300">pinMode(ledPin, OUTPUT);</div>
                   <div className="text-purple-300">{`}`}</div>
                   <br />
                   
-                  <div className="mb-2 text-cyan-400 text-lg">{/* Main Loop */}// Main Loop</div>
+                  <div className="mb-2 text-cyan-400 text-lg">{/* Main Loop */}</div>
                   <div className="text-purple-300">void loop() {`{`}</div>
                   <div className="ml-4 text-green-300">sensorValue = analogRead(sensorPin);</div>
                   <div className="ml-4 text-green-300">sensorValue = sensorValue * (5.0 / 1023.0);</div>
                   <br />
                   <div className="ml-4 text-orange-300">if (sensorValue &gt; 2.5) {`{`}</div>
                   <div className="ml-8 text-green-300">ledState = true;</div>
-                  <div className="ml-8 text-green-300">status = "ON";</div>
+                  <div className="ml-8 text-green-300">status = &quot;ON&quot;;</div>
                   <div className="ml-8 text-green-300">digitalWrite(ledPin, HIGH);</div>
                   <div className="ml-4 text-orange-300">{`}`} else {`{`}</div>
                   <div className="ml-8 text-green-300">ledState = false;</div>
-                  <div className="ml-8 text-green-300">status = "OFF";</div>
+                  <div className="ml-8 text-green-300">status = &quot;OFF&quot;;</div>
                   <div className="ml-8 text-green-300">digitalWrite(ledPin, LOW);</div>
                   <div className="ml-4 text-orange-300">{`}`}</div>
                   <br />
-                  <div className="ml-4 text-blue-300">Serial.print("Sensor: ");</div>
+                  <div className="ml-4 text-blue-300">Serial.print(&quot;Sensor: &quot;);</div>
                   <div className="ml-4 text-blue-300">Serial.print(sensorValue);</div>
-                  <div className="ml-4 text-blue-300">Serial.print(" Status: ");</div>
+                  <div className="ml-4 text-blue-300">Serial.print(&quot; Status: &quot;);</div>
                   <div className="ml-4 text-blue-300">Serial.println(status);</div>
                   <div className="ml-4 text-orange-300">delay(1000);</div>
                   <div className="text-purple-300">{`}`}</div>
